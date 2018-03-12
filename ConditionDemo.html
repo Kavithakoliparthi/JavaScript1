@@ -1,0 +1,99 @@
+﻿    <!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <!--if-else loop-->
+    <p id="demo"></p>
+    <script>    
+        var name="dotnet";
+        if(name == "language")
+        {
+            document.getElementById("demo").innerHTML = "Hello Dot net language";
+        }
+        else
+        {
+            document.getElementById("demo").innerHTML = "Dotnet language";
+        }
+    </script>
+        <!--Switch case-->
+    <p id="demo1"></p>
+     <script>
+    var day;
+    switch (new Date().getDay())
+    {
+        case 0:
+                day = "Sunday";
+                 break;
+        case 1:
+                day = "Monday";
+                break;
+        case 2:
+                day = "Tuesday";
+                break;
+        case 3:
+                day = "Wednesday";
+                break;
+        case 4:
+                day = "Thursday";
+                break;
+        case 5:
+                day = "Friday";
+                break;
+        case  6:
+            day = "Saturday";
+        default:
+            "End of the week";
+       }
+        document.getElementById("demo1").innerHTML = "Today is " + day;
+   </script>
+        <!--for loop-->
+    <p>JavaScript Loops</p>
+   <p id="demo2"></p>
+    <script>
+        var fruits = ["Banana", "Orange", "Kiwi", "Grapgs", "Apple", "Mango"];
+        var text = "";
+        var i;
+        //for (i = 0; i < fruits.length; i++)
+        //{
+        //    text += fruits[i] + "<br>";
+        //}
+                //for in loop
+        for (i in fruits)
+        {
+            text += fruits[i] + "<br>";
+        }
+        document.getElementById("demo2").innerHTML = text;
+    </script>
+            <!--do-while loop-->
+    <p>JavaScript do ... while</p>
+    <p id="demo3"></p>
+    <script>
+        var text = ""
+        var i = 0;
+        do
+        {
+            text += "<br>The number is " + i;
+            i++;
+        } while (i < 5);
+        document.getElementById("demo3").innerHTML = text;
+    </script>
+        <!--while loop-->
+    <p>JavaScript while</p>
+    <p id="demo4"></p>
+     <script>
+        var text = "";
+        var i = 2;
+        while (i < 7)
+        {
+            text += "<br>The number is " + i;
+            i++;
+         }
+        document.getElementById("demo4").innerHTML = text;
+    </script>
+
+
+</body>
+</html>

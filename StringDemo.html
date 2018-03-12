@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var x = "language";
+        var y = new String("language");
+        document.getElementById("demo").innerHTML =
+            "The type of x value is:"+typeof x + "<br>"+"The type of Y value is:" + typeof y;
+    </script>
+
+    <p id="demo1"></p>
+    <p>Strings and objects cannot be compared</p>
+   <script>
+        var x = "language";
+        var y = new String("language");
+        document.getElementById("demo1").innerHTML = typeof x + "<br>" + typeof y;
+        document.getElementById("demo1").innerHTML = "The value of x === y is:" + (x === y);
+    </script>
+
+    <p id="demo2"></p>
+    <p>Strings and objects cannot be compared</p>
+    <script>
+        var x = "language";
+        var y = new String("language");
+        document.getElementById("demo2").innerHTML = "The value of x == y is:" + (x == y);
+    </script>
+
+    <p id="demo3"></p>
+    <p>Javascript Objects cannot be compared</p>
+    <script>
+        var x = new String("language");
+        var y = new String("language");
+        document.getElementById("demo3").innerHTML = "The value of x === y is:"+(x === y);
+    </script>
+
+  
+    <p id="demo4"></p>
+    <script>
+        var x = new String("dotnet");  
+        var y = new String("dotnet");  
+        document.getElementById("demo4").innerHTML ="The value of x == y is:"+ (x==y);
+    </script>
+
+    <p id="demo5"></p>
+
+    <script>
+        var str = "Please locate where 'locate' occurs!";
+        var pos = str.lastIndexOf("locate");
+        var pos1 = str.indexOf("locate");
+        var pos2 = str.search("where");
+        document.getElementById("demo5").innerHTML =
+            "The last index of locate is:" + pos +
+            "<br>" +
+            "The index of locate is:" + pos1 +
+            "<br>" +
+            "The length of str is:"+ str.length + 
+            "<br>"+
+            "The searching string index is:"+pos2;
+    </script>
+
+    <p id="demo6"></p>
+    <script>
+        var str = "Apple, Mango, Graphs, Banana, Kiwi";
+        var res = str.slice(7, 13);
+        var res1 = str.slice(-12, -6);
+        var res2 = str.slice(13);
+        var upper = str.toUpperCase();
+        var lower = str.toLowerCase();
+        var lu = str.toLocaleUpperCase();
+        var c = str.charAt(1);
+        var c1 = str.charCodeAt(2);
+        document.getElementById("demo6").innerHTML = res + "<br>" + res1 + "<br>" + res2 +
+            "<br>"+"The uppercase string is" + upper +
+            "<br>" + "The lower case string is:" + lower+
+            "<br>" + "The local upper case string is:" + lu+
+               "<br>"+"The character at the the 0 th index is:"+c+
+            "<br>"+"The character code at the 1 st index is:"+c1;
+
+    </script>
+
+    <h2>JavaScript Numbers</h2>
+    <p id="demo7"></p>
+    <script>
+        var x = 10;
+        var y = 20;
+        document.getElementById("demo7").innerHTML ="The result is: " + x + y;
+    </script>
+
+
+    <p>The shift() method removes the first element of an array (and "shifts" all other elements to the left):</p>
+
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <script>
+        var fruits = ["Banana", "Orange", "Kiwi", "Grapgs", "Apple", "Mango"];
+        document.getElementById("demo8").innerHTML = fruits;
+        fruits.shift();
+        document.getElementById("demo9").innerHTML = fruits;
+    </script>
+
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo10"></p>
+    <script>
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo").innerHTML = fruits;
+        function myFunction()
+        {
+            document.getElementById("demo10").innerHTML = fruits;
+            fruits.unshift("Lemon");
+            document.getElementById("demo11").innerHTML = fruits;
+        }
+    </script>
+
+    <p id="demo12"></p>
+    <script>
+        var fruits = ["Banana", "Orange", "Kiwi", "Grapgs", "Apple", "Mango"];
+        document.getElementById("demo12").innerHTML = fruits;
+        fruits.sort();
+         document.getElementById("demo12").innerHTML = "After sort() the fruits are:"+fruits;
+      </script>
+
+    <p id="demo13"></p>
+    <script>
+        var fruits = ["Banana", "Orange", "Kiwi", "Grapgs", "Apple", "Mango"];
+        document.getElementById("demo13").innerHTML = fruits;
+        fruits.sort();
+        fruits.reverse();
+        document.getElementById("demo13").innerHTML = "After reversing the fruits names are:"+fruits;
+      </script>
+</body>
+</html>

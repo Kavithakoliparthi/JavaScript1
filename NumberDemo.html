@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <p>The toString() method converts a number to a string.</p>
+    <p id="demo"></p>
+    <script>
+        var x = 83;
+        document.getElementById("demo").innerHTML =
+            x.toString() + "<br>" +
+            (83).toString() + "<br>" +
+            (50 + 33).toString();
+    </script>
+
+    <p>An optional parameter defines the number of digits behind the decimal point.</p>
+    <p id="demo2"></p>
+    <script>
+        var x = 3.215;
+        document.getElementById("demo2").innerHTML =
+            x.toExponential() + "<br>" +
+            x.toExponential(2) + "<br>" +
+            x.toExponential(4);
+    </script>
+
+    <p>The toFixed() method rounds a number to a given number of digits.</p>
+    <p id="demo3"></p>
+    <script>
+        var x = 4.3721;
+        document.getElementById("demo3").innerHTML =
+            x.toFixed(0) + "<br>" +
+            x.toFixed(2) + "<br>" +
+            x.toFixed(4);
+    </script>
+
+    <p>The toPrecision() method returns a string, with a number written with a specified length:</p>
+    <p id="demo4"></p>
+    <script>
+        var x = 3.2956;
+        document.getElementById("demo4").innerHTML =
+            x.toPrecision() + "<br>" +
+            x.toPrecision(2) + "<br>" +
+            x.toPrecision(5);
+    </script>
+
+
+</body>
+</html>

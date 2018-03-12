@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <p id="demo">JS</p>
+    <button type="button" onclick="myFunction()">Click Me</button>
+    <script src="MyJavaScript.js"></script>
+
+    <p>The result of adding "5" + 2 + 3:</p>
+
+    <p id="demo1"></p>
+
+    <script>
+        var x = "16" + 32 + 27;
+        document.getElementById("demo1").innerHTML = x;
+    </script>
+
+    <p>The result of adding 16 + 32 + "27":</p>
+
+    <p id="demo2"></p>
+
+    <script>
+        var x = 5 + 8 + "12"
+        document.getElementById("demo2").innerHTML = x;
+    </script>
+    <p>Array indexes are zero-based, which means the first item is index is 0.</p>
+
+    <p id="demo3"></p>
+
+    <script>
+        var roses = ["red","white","pink","yellow"];
+
+        document.getElementById("demo3").innerHTML = roses[2];
+    </script>
+
+    <h2>JavaScript Objects</h2>
+
+    <p id="demo4"></p>
+
+    <script>
+        var student = {
+            firstName: "Anaya",
+            age : 21
+                    };
+
+    document.getElementById("demo4").innerHTML = student.firstName + " is " + student.age + " years old.";
+    </script>
+
+    <h2>JavaScript typeof</h2>
+    <p>The typeof operator returns the type of a variable or an expression.</p>
+
+    <p id="demo5"></p>
+
+    <script>
+        document.getElementById("demo5").innerHTML =
+            typeof "" + "<br>" +
+            typeof 35 + "<br>" +
+            typeof 3.9;
+    </script>
+
+    <p>The function to convert from Fahrenheit to Celsius:</p>
+    <p id="demo6"></p>
+
+    <script>
+        function toCelsius(f)
+        {
+            return (5/9) * (f-32);
+        }
+        document.getElementById("demo6").innerHTML = toCelsius(75);
+    </script>
+
+    <p>Local variable values cannot accessed outside of the function</p>
+    <p id="demo7"></p>
+    <script>
+        myFunction();
+        document.getElementById("demo7").innerHTML = "The value of flower is:" + typeof flower;
+        function myFunction()
+        {
+            var flower = "rose";
+        }
+   </script>
+
+    <p>Global variable values can be accessed any function (or) script tag</p>
+    <p id="demo8"></p>
+    <script>
+        var flower = "rose";
+        myFunction();
+        function myFunction()
+        {
+            document.getElementById("demo8").innerHTML = "The flower is:" + flower;
+        }
+    </script>
+
+    <p>
+        If you assign a value to a variable that has not been declared,
+        it will automatically become a GLOBAL variable:
+    </p>
+
+    <p id="demo9"></p>
+
+    <script>
+        myFunction();
+        document.getElementById("demo9").innerHTML = "The flower is: " + flower;
+        document.getElementById("demo9").innerHTML = "The length of the flower is: " + flower.length;
+        function myFunction()
+        {
+            flower = "rose";;
+        }
+    </script>
+</body>
+</html>
