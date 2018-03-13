@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <script>
+        Sample();
+        function Sample()
+        {
+            var map = new Map();
+            map.set('4', 'str1');
+            map.set(9, 'num1');
+            map.set(true, 'bool');
+            map.set("name", "language");
+            console.log("The value of key 9 is:" + map.get(9));
+            console.log("The value of key '4' is:" + map.get('4'));
+            console.log("The key is exist or not:" + map.has(3));
+            console.log("The size of the map is:" + map.size);
+            console.log("The deleted key is:" + map.delete('4'));
+            console.log("The size of the map is:" + map.size);
+        }
+
+    </script>
+</body>
+</html>

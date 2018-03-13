@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <script>
+        Sample();
+        function Sample()
+        {
+            var set = new Set();
+            set.add("hello");
+            set.add("hi");
+            set.add("mary");
+            set.add("hi");
+            set.add("language");
+
+            console.log("The size of the map is:" + set.size);
+            console.log("The key is exist or not:" + set.has("hi"));
+            console.log("The deleted key is:" + set.delete('mary'));
+            console.log("The deleted key is:" + set.delete("hiii"));
+            for (let user of set) 
+            {
+                console.log(user);
+            }
+        }
+
+    </script>
+</body>
+</html>
